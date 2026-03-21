@@ -1,4 +1,4 @@
-MÓDULO 1: Cimientos y Entorno Moderno (4 horas)
+#MÓDULO 1: Cimientos y Entorno Moderno (4 horas)
 Sesión 1.1: Configuración del Entorno (1 hora)
 Teoría (20 min)
 
