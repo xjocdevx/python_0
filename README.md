@@ -10,7 +10,7 @@ El nuevo REPL interactivo: colores, autocompletado, ayuda integrada
 
 Práctica Guiada (40 min)
 
-´´´python
+```python
 # Ejercicio 1: Primer contacto con REPL
 # Comandos en terminal:
 # >>> nombre = "Estudiante"
@@ -26,7 +26,7 @@ print("=" * 50)
 nombre = input("¿Cómo te llamas? ")
 print(f"Encantado de conocerte, {nombre}!")
 print(f"La versión de Python es: 3.14+")
-´´´
+```
 Sesión 1.2: Variables y Tipos Primitivos (1.5 horas)
 Teoría (30 min)
 
