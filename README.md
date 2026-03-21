@@ -1,4 +1,4 @@
-#MÓDULO 1: Cimientos y Entorno Moderno (4 horas)
+# MÓDULO 1: Cimientos y Entorno Moderno
 Sesión 1.1: Configuración del Entorno (1 hora)
 Teoría (20 min)
 
@@ -36,7 +36,7 @@ f-strings avanzados: formato, alineación, expresiones
 
 Práctica Intensiva (1 hora)
 
-python
+```python
 # Ejercicio 3: Calculadora de edad canina
 edad_humana = int(input("Ingresa tu edad: "))
 edad_perro = edad_humana * 7
@@ -55,10 +55,11 @@ tiene_licencia = input("¿Tienes licencia? (si/no): ").lower() == "si"
 edad = int(input("Edad: "))
 puede_conducir = edad >= 18 and tiene_licencia
 print(f"¿Puede conducir? {puede_conducir}")
+```
 Sesión 1.3: Entrada/Salida y Debugging (1.5 horas)
 Práctica con errores comunes (45 min)
 
-python
+```python
 # Ejercicio 6: Debug con mensajes mejorados Python 3.14
 # Los estudiantes cometen errores intencionales para ver los mensajes
 
@@ -91,7 +92,7 @@ MÓDULO 2: Lógica de Programación y Control (4 horas)
 Sesión 2.1: Operadores y Condicionales (1.5 horas)
 Teoría + Práctica (45 min)
 
-python
+´´´python
 # Ejercicio 8: Clasificador de números
 numero = float(input("Ingresa un número: "))
 
