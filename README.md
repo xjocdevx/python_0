@@ -180,40 +180,25 @@ else:
     if not tiene_mayuscula:
         print("  - Debe incluir al menos una mayúscula")
 Sesión 2.3: Bucles For y While (1.5 horas)
-python
+Ejercicio 11
+```python
 # Ejercicio 11: Tablas de multiplicar con for
 print("GENERADOR DE TABLAS DE MULTIPLICAR")
 numero = int(input("¿Qué tabla quieres ver? "))
 
 for i in range(1, 11):
     resultado = numero * i
-    print(f"{numero:2} x {i:2} = {resultado:3}")
+    print(f"{numero:2} x{i:2} ={resultado:3}")
 
-# Ejercicio 12: Adivinanza con while
-import random
+# range() explicado
+print("\nExplorando range():")
+print(list(range(5)))        # [0, 1, 2, 3, 4]
+print(list(range(2, 8)))      # [2, 3, 4, 5, 6, 7]
+print(list(range(1, 10, 2)))  # [1, 3, 5, 7, 9]
+```
+Ejercicio 12:
 
-print("\nJUEGO DE ADIVINANZA")
-print("Adivina el número entre 1 y 20")
-
-secreto = random.randint(1, 20)
-intentos = 0
-adivinado = False
-
-while not adivinado and intentos < 5:
-    intentos += 1
-    guess = int(input(f"Intento {intentos}/5: "))
-    
-    if guess == secreto:
-        print(f"🎉 ¡Correcto! Lo lograste en {intentos} intentos")
-        adivinado = True
-    elif guess < secreto:
-        print("📉 Muy bajo")
-    else:
-        print("📈 Muy alto")
-
-if not adivinado:
-    print(f"😢 Lo siento, el número era {secreto}")
-
+```python
 # Ejercicio 13: Control de bucles
 print("\nNÚMEROS ESPECIALES")
 for i in range(1, 21):
