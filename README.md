@@ -53,7 +53,8 @@ precio_final = precio * (1 - descuento)
 print(f"Precio original: ${precio:>10.2f}")
 print(f"Descuento: {descuento:.1%}")
 print(f"Total: ${precio_final:>13.2f}")
-
+```
+```python
 # Ejercicio 5: Booleans en acción
 tiene_licencia = input("¿Tienes licencia? (si/no): ").lower() == "si"
 edad = int(input("Edad: "))
@@ -74,7 +75,9 @@ numero = "10"
 # Solución: Conversión explícita
 resultado = int(numero) + 5
 print(f"Resultado correcto: {resultado}")
+```
 
+```python
 # Error 2: NameError
 # print(variable_no_definida)  # Error controlado
 
@@ -92,11 +95,12 @@ print("\n" + "=" * 30)
 print(f"Propina: ${propina:.2f}")
 print(f"Total a pagar: ${total_final:.2f}")
 print("=" * 30)
-MÓDULO 2: Lógica de Programación y Control (4 horas)
+```
+# MÓDULO 2: Lógica de Programación y Control (4 horas)
 Sesión 2.1: Operadores y Condicionales (1.5 horas)
 Teoría + Práctica (45 min)
 
-´´´python
+```python
 # Ejercicio 8: Clasificador de números
 numero = float(input("Ingresa un número: "))
 
