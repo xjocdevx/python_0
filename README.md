@@ -143,6 +143,19 @@ match calificacion:
 
 print(f"Resultado: {mensaje}")
 
+# Versión alternativa sin match-case (para referencia)
+def calificacion_tradicional(letra):
+    if letra == "A":
+        return "Excelente"
+    elif letra == "B":
+        return "Bueno"
+    elif letra == "C":
+        return "Suficiente"
+    else:
+        return "No válida"
+
+
+
 # Ejercicio 10: Validador de contraseñas (proyecto parcial)
 print("\nVALIDACIÓN DE CONTRASEÑA")
 print("- Requisitos:")
