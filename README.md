@@ -7,14 +7,16 @@ Python 3.14: características y ventajas para principiantes
 El nuevo REPL interactivo: colores, autocompletado, ayuda integrada
 
 Práctica Guiada (40 min)
-
+Ejercicio No.1
 ```python
 # Ejercicio 1: Primer contacto con REPL
 # Comandos en terminal:
 # >>> nombre = "Estudiante"
 # >>> print(f"Hola, {nombre}!")
 # >>> ayuda(str)  # Explorar documentación integrada
-
+```
+Ejercicio No.2
+```python
 # Ejercicio 2: Configurar VS Code
 # Crear primer script: hola_mundo.py
 print("=" * 50)
@@ -35,13 +37,15 @@ Tipado dinámico vs estático
 f-strings avanzados: formato, alineación, expresiones
 
 Práctica Intensiva (1 hora)
-
+Ejercicio No.3
 ```python
 # Ejercicio 3: Calculadora de edad canina
 edad_humana = int(input("Ingresa tu edad: "))
 edad_perro = edad_humana * 7
 print(f"Tu edad en años perro sería: {edad_perro} años 🐕")
-
+```
+Ejercicio No.4
+```python
 # Ejercicio 4: Formateo avanzado
 precio = 49.95
 descuento = 0.15
