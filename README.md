@@ -119,9 +119,9 @@ if numero % 2 == 0 and numero != 0:
     print("Es par")
 elif numero % 2 == 1:
     print("Es impar")
-´´´
+```
 Sesión 2.2: Match-Case y Condicionales Avanzados (1 hora)
-´´´python
+```python
 # Ejercicio 9: Sistema de calificaciones con match-case
 print("SISTEMA DE CALIFICACIONES")
 print("Opciones: A, B, C, D, F")
