@@ -199,7 +199,7 @@ print(list(range(5)))        # [0, 1, 2, 3, 4]
 print(list(range(2, 8)))      # [2, 3, 4, 5, 6, 7]
 print(list(range(1, 10, 2)))  # [1, 3, 5, 7, 9]
 ```
-Ejercicio 12:
+Ejercicio 13:
 
 ```python
 # Ejercicio 13: Control de bucles
@@ -211,7 +211,6 @@ for i in range(1, 21):
         break     # Detener después de 15
     print(f"Número: {i}")
 ```
-```python
 MÓDULO 3: Colecciones y Estructuras de Datos (4 horas)
 Sesión 3.1: Listas y Tuplas (1.5 horas)
 ```python
@@ -263,4 +262,5 @@ print(f"Primeros 3: {numeros[:3]}")
 print(f"Últimos 3: {numeros[-3:]}")
 print(f"Paso 2: {numeros[::2]}")
 print(f"Invertido: {numeros[::-1]}")
+```
 Sesión 3.2: Diccionarios y Conjuntos (1.5 horas)
