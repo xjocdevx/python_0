@@ -119,8 +119,9 @@ if numero % 2 == 0 and numero != 0:
     print("Es par")
 elif numero % 2 == 1:
     print("Es impar")
+´´´
 Sesión 2.2: Match-Case y Condicionales Avanzados (1 hora)
-python
+´´´python
 # Ejercicio 9: Sistema de calificaciones con match-case
 print("SISTEMA DE CALIFICACIONES")
 print("Opciones: A, B, C, D, F")
@@ -153,9 +154,10 @@ def calificacion_tradicional(letra):
         return "Suficiente"
     else:
         return "No válida"
+```
+Ejercicio 10
 
-
-
+```python
 # Ejercicio 10: Validador de contraseñas (proyecto parcial)
 print("\nVALIDACIÓN DE CONTRASEÑA")
 print("- Requisitos:")
@@ -180,6 +182,7 @@ else:
     if not tiene_mayuscula:
         print("  - Debe incluir al menos una mayúscula")
 Sesión 2.3: Bucles For y While (1.5 horas)
+```
 Ejercicio 11
 ```python
 # Ejercicio 11: Tablas de multiplicar con for
@@ -207,9 +210,11 @@ for i in range(1, 21):
     if i > 15:
         break     # Detener después de 15
     print(f"Número: {i}")
+```
+```python
 MÓDULO 3: Colecciones y Estructuras de Datos (4 horas)
 Sesión 3.1: Listas y Tuplas (1.5 horas)
-python
+```python
 # Ejercicio 14: Gestor de lista de compras
 print("LISTA DE COMPRAS INTERACTIVA")
 compras = []
@@ -248,7 +253,9 @@ while True:
         break
     else:
         print("❌ Opción no válida")
-
+```
+Ejercicio 15
+```python
 # Ejercicio 15: Slicing y métodos de listas
 numeros = list(range(1, 11))
 print(f"Original: {numeros}")
