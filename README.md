@@ -240,7 +240,7 @@ for i in range(1, 21):
         break     # Detener después de 15
     print(f"Número: {i}")
 ```
-MÓDULO 3: Colecciones y Estructuras de Datos (4 horas)
+# MÓDULO 3: Colecciones y Estructuras de Datos (4 horas)
 Sesión 3.1: Listas y Tuplas (1.5 horas)
 ```python
 # Ejercicio 14: Gestor de lista de compras
@@ -402,7 +402,7 @@ while True:
     if continuar != 's':
         break
 ```
-#MÓDULO 4: Funciones y Modularización (4 horas)
+# MÓDULO 4: Funciones y Modularización (4 horas)
 Sesión 4.1: Definición de Funciones (1.5 horas)
 
 Ejercicio 20:
@@ -632,7 +632,7 @@ except ImportError:
     print("\n❌ requests no está instalado")
     print("Para instalarlo: pip install requests")
 ```
-MÓDULO 5: Proyecto Final y Futuro (4 horas)
+# MÓDULO 5: Proyecto Final y Futuro (4 horas)
 Sesión 5.1: Taller Práctico - Gestor de Tareas (2 horas)
 
 ```python
@@ -980,13 +980,15 @@ print("  black buenas_practicas.py")
 ```
 Sesión 5.3: IA como Asistente y Cierre (1 hora)
 Teoría y Demostración: Uso Ético de IA
+
 Escenario 1:
 ```python
+
 """
 MÓDULO: asistente_ia.py
 DEMOSTRACIÓN DE CÓMO USAR IA EN EL APRENDIZAJE
-"""
 
+"""
 # Escenario 1: IA para explicar código
 codigo_complejo = """
 def fibonacci(n):
@@ -1010,22 +1012,174 @@ def dividir(a, b):
 print("\n✅ Buen uso: Preguntar '¿Qué errores puede tener este código?'")
 print("❌ Mal uso: 'Escríbeme un programa completo' sin entenderlo")
 ```
+Escenario 2: 
+
 ```python
+# Escenario 2: IA para encontrar bugs
+codigo_con_error = """
+def dividir(a, b):
+    return a / b  # ¿Qué pasa si b es 0?
+"""
+
+print("\n✅ Buen uso: Preguntar '¿Qué errores puede tener este código?'")
+print("❌ Mal uso: 'Escríbeme un programa completo' sin entenderlo")
+
+# Escenario 3: IA para mejorar código
+def mi_codigo():
+    numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    pares = []
+    for i in range(len(numeros)):
+        if numeros[i] % 2 == 0:
+            pares.append(numeros[i])
+    return pares
+
+def codigo_mejorado():
+    """Versión más Pythonica (IA puede sugerir esto)"""
+    numeros = list(range(1, 11))
+    return [n for n in numeros if n % 2 == 0]
+
+print(f"Original: {mi_codigo()}")
+print(f"Mejorado: {codigo_mejorado()}")
+```
+Escenario 4: 
 ```python
+print("\n" + "=" * 60)
+print("PROMPTING EFECTIVO PARA IA".center(60))
+print("=" * 60)
+
+ejemplos_prompt = [
+    "❌ Mal prompt: 'Hazme un programa'",
+    "✅ Buen prompt: 'Necesito una función en Python que valide emails, explícame cómo funciona'",
+    "✅ Buen prompt: '¿Cómo puedo mejorar este código? [pegar código]'",
+    "✅ Buen prompt: '¿Qué significa este error? [pegar error]'"
+]
+
+for ejemplo in ejemplos_prompt:
+    print(ejemplo)
+```
+Hoja de Ruta para Nivel Intermedio
 ```python
+"""
+HOJA DE RUTA - PRÓXIMOS PASOS (Python 3.12+)
+"""
+
+print("=" * 60)
+print("🚀 HOJA DE RUTA: NIVEL INTERMEDIO".center(60))
+print("=" * 60)
+
+print("""
+📌 1. PROGRAMACIÓN ORIENTADA A OBJETOS (POO)
+   • Clases y objetos
+   • Herencia y polimorfismo
+   • Métodos especiales (__init__, __str__, __repr__)
+   • Propiedades y decoradores (@property)
+
+📌 2. MANEJO DE ARCHIVOS AVANZADO
+   • CSV: módulo csv
+   • JSON: json.load() y json.dump()
+   • Excel: openpyxl (instalación con pip)
+   • Context managers (with) avanzados
+
+📌 3. LIBRERÍAS ESTÁNDAR IMPORTANTES
+   • collections (defaultdict, Counter, namedtuple)
+   • itertools (cadenas infinitas, combinaciones)
+   • functools (lru_cache, partial)
+   • pathlib (manejo moderno de rutas)
+
+📌 4. PAQUETES POPULARES (instalación con pip)
+   • requests - peticiones HTTP
+   • pandas - análisis de datos
+   • matplotlib - visualización
+   • flask - desarrollo web mínimo
+
+📌 5. ESPECIALIZACIONES
+   • Ciencia de Datos: numpy, pandas, scikit-learn
+   • Desarrollo Web: Flask, Django
+   • Automatización: selenium, beautifulsoup4
+   • APIs: fastapi, requests
+
+📌 6. PROYECTOS INTERMEDIOS
+   • Web scraper de noticias con requests y bs4
+   • Dashboard de datos con matplotlib
+   • API REST con Flask
+   • Automatización de tareas con schedule
+
+📌 7. RECURSOS DE APRENDIZAJE
+   • Documentación oficial: docs.python.org
+   • Real Python: realpython.com
+   • PyPI: pypi.org (búsqueda de paquetes)
+   • GitHub: explorar proyectos open source
+""")
+
+print("=" * 60)
+print("🎓 ¡FELICIDADES POR COMPLETAR EL CURSO!".center(60))
+print("=" * 60)
+print("\nRecuerda:")
+print("• La práctica constante es la clave")
+print("• Lee código de otros programadores")
+print("• Contribuye a proyectos open source")
+print("• Nunca pares de aprender")
+```
+RECURSOS ADICIONALES PARA EL INSTRUCTOR
+Checklist de Instalación para Laboratorio (Python 3.12.3)
+
 ```python
+Checklist de Instalación para Laboratorio (Python 3.12.3)
+```
 ```python
+# Verificar versión de Python
+python --version  # Debe mostrar Python 3.12.3
+
+# Verificar pip
+pip --version
+
+# Instalar VS Code (versión portable si es necesario)
+# Extensiones mínimas:
+# - Python (ms-python.python)
+# - Pylance (ms-python.vscode-pylance)
+
+# Instalar herramientas útiles (opcional)
+pip install black  # Formateador de código
+pip install pycodestyle  # Verificador PEP 8
+pip install pytest  # Testing básico
+
+# Verificar instalación
+python -c "import sys; print(f'Python {sys.version}')"
+```
+Solución de Problemas Comunes en Python 3.12
+
 ```python
-```python
-```python
-```python
-```python
-```python
-```python
-```python
-```python
-```python
-```python
+"""
+SOLUCIÓN DE PROBLEMAS COMUNES EN PYTHON 3.12
+"""
+
+# Problema 1: DeprecationWarnings
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+
+# Problema 2: Encoding en archivos
+# Siempre especificar encoding
+with open('archivo.txt', 'r', encoding='utf-8') as f:
+    contenido = f.read()
+
+# Problema 3: Paths en diferentes sistemas operativos
+import os
+from pathlib import Path
+
+# Forma antigua (problemática)
+# ruta = 'carpeta/archivo.txt'  # No funciona en Windows
+
+# Forma moderna con pathlib
+ruta = Path('carpeta') / 'archivo.txt'
+print(f"Ruta correcta: {ruta}")
+
+# Problema 4: Módulos no encontrados
+import sys
+print(f"Python path: {sys.path}")
+# Agregar directorio actual si es necesario
+sys.path.append(os.path.dirname(__file__))
+```
+
 
 
 
