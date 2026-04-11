@@ -962,6 +962,11 @@ PI = 3.14159
 GRAVEDAD = 9.8
 VELOCIDAD_LUZ = 299792458  # m/s
 DIAS_SEMANA = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo']
+
+print("Valor de PI:", PI)
+print("Valor de la gravedad:", GRAVEDAD)
+print("Velocidad de la luz:", VELOCIDAD_LUZ, "m/s") 
+print("Días de la semana:", DIAS_SEMANA)
 ```
 Ejemplo 31:
 
