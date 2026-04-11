@@ -948,6 +948,12 @@ def convertir_temperatura(valor, desde='celsius', hasta='fahrenheit'):
         return (valor - 32) * 5/9
     else:
         return valor
+
+# Uso de la función
+temp_c = 25
+temp_f = convertir_temperatura(temp_c, 'celsius', 'fahrenheit')
+print(f"{temp_c}°C = {temp_f}°F")
+
 ```
 Ejemplo 30:
 ```python
