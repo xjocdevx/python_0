@@ -918,6 +918,10 @@ def filtrar_numeros_mayores_que(numeros, umbral):
         if numero > umbral:
             numeros_filtrados.append(numero)
     return numeros_filtrados
+
+print(proc([1, 5, 3, 8, 2], 4))  # Output: [5, 8]
+print(filtrar_numeros_mayores_que([1, 5, 3, 8, 2], 4))
+
 ```
 Ejemplo 29
 ```python
