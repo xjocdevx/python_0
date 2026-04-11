@@ -985,6 +985,10 @@ nombre_completo: str = "Ana García"
 edades: list[int] = [25, 30, 22]
 activo: bool = True
 
+print(saludar(nombre_completo))
+print(f"La suma de las edades es: {sumar_numeros(edades)}")
+print(f"¿Está activo? {'Sí' if activo else 'No'}")
+
 print("VERIFICADOR DE CÓDIGO PEP 8")
 print("Para verificar PEP 8, instala:")
 print("  pip install pycodestyle")
