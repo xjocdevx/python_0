@@ -587,6 +587,7 @@ Ejercicio 26:
 ```python
 # Ejercicio 26: Creando nuestro primer módulo
 # Crear archivo 'utilidades.py' con:
+# pip install utilidades
 """
 def saludar(nombre):
     return f"¡Hola {nombre}!"
