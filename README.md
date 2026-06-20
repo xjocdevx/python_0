@@ -1198,7 +1198,66 @@ print(f"Python path: {sys.path}")
 # Agregar directorio actual si es necesario
 sys.path.append(os.path.dirname(__file__))
 ```
+### proyecto de archivo txt a xls
+- leer_txt(archivo) — Lee el TXT (formato CSV con columnas: id, nombre, nota)
+- escribir_xls(datos, archivo_salida) — Escribe los datos a un archivo .xls usando xlwt
+- Uso por defecto: python 01_proy.py usa datos.txt como entrada y datos.xls como salida
+- Uso con argumentos: python 01_proy.py entrada.txt salida.xls
 
+Crear arhivo datos
+```python
+1, Juan Perez, 85
+2, Maria Lopez, 92
+3, Carlos Gomez, 78
+4, Ana Torres, 95
+```
+```python
+import sys
+import xlwt
+from xlwt import Workbook
+
+def leer_txt(archivo):
+    datos = []
+    with open(archivo, 'r', encoding='utf-8') as f:
+        for linea in f:
+            linea = linea.strip()
+            if not linea:
+                continue
+            partes = linea.split(',')
+            if len(partes) >= 3:
+                id_ = partes[0].strip()
+                nombre = partes[1].strip()
+                nota = partes[2].strip()
+                datos.append((id_, nombre, nota))
+    return datos
+
+def escribir_xls(datos, archivo_salida):
+    wb = Workbook()
+    hoja = wb.add_sheet('Datos')
+
+    hoja.write(0, 0, 'ID')
+    hoja.write(0, 1, 'Nombre')
+    hoja.write(0, 2, 'Nota')
+
+    for i, (id_, nombre, nota) in enumerate(datos, start=1):
+        hoja.write(i, 0, id_)
+        hoja.write(i, 1, nombre)
+        hoja.write(i, 2, nota)
+
+    wb.save(archivo_salida)
+    print(f"Datos guardados en '{archivo_salida}'")
+
+def main():
+    entrada = sys.argv[1] if len(sys.argv) > 1 else 'datos.txt'
+    salida = sys.argv[2] if len(sys.argv) > 2 else 'datos.xls'
+
+    datos = leer_txt(entrada)
+    print(f"Se leyeron {len(datos)} registros de '{entrada}'")
+    escribir_xls(datos, salida)
+
+if __name__ == '__main__':
+    main()
+```
 
 
 
