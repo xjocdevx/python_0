@@ -1259,7 +1259,23 @@ def main():
 if __name__ == '__main__':
     main()
 ```
+### SQLITE
+```python
+import sqlite3
 
+conexion = sqlite3.connect("empresa.db")
+cursor = conexion.cursor()
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS usuarios(
+    id INTEGER PRIMARY KEY,
+    nombre TEXT
+)
+""")
+
+conexion.commit()
+conexion.close()
+```
 
 
 
