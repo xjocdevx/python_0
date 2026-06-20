@@ -1204,7 +1204,7 @@ sys.path.append(os.path.dirname(__file__))
 - Uso por defecto: python 01_proy.py usa datos.txt como entrada y datos.xls como salida
 - Uso con argumentos: python 01_proy.py entrada.txt salida.xls
 
-Crear arhivo datos
+Crear arhivo datos.txt
 ```python
 1, Juan Perez, 85
 2, Maria Lopez, 92
